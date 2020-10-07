@@ -1,0 +1,7 @@
+cookieName: "test"
+defaultTarget:
+  id: "default"
+  url: "http://localhost:10000"
+additionalTargets:
+- id: "other"
+  url: "http://localhost:10001"

@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  backend-1:
+    image: "hashicorp/http-echo"
+    command:
+      - "-listen=:10000"
+      - "-text=backend-1"
+    ports:
+      - "10000:10000"
+  backend-2:
+    image: "hashicorp/http-echo"
+    command:
+      - "-listen=:10001"
+      - "-text=backend-2"
+    ports:
+      - "10001:10001"
